@@ -5,6 +5,8 @@
     background: url(../img/header-bg.png) center / cover no-repeat
     display: grid
     grid-template-rows: 1fr min-content minmax(10.5rem, min-content) 1fr
+    @include respond(tab-port)
+        grid-column: full-start / full-end
     &__btn
         align-self: start
         justify-self: start
